@@ -1,6 +1,9 @@
 # Williams Sonoma Coding Challenge
 ### Author: Eric Jones
 
+#### Summary
+This web app was built using vanilla JS.  It takes JSON provided by Williams Sonoma and forms it into a product details page.  The majority of the work was done in `js/main.js`.  Thank you for taking a look!
+
 #### Running the server
 The appication uses http-server, and can be initilaized with:
 ```
@@ -21,7 +24,7 @@ I used mocha with jsdom in order to test exported functions with the main.js fil
 npm run test
 ```
 
-## Next Step and things to do
+#### Next Step and things to do
 Although the application is in a working spot, there is always room for improvement.  Continuing this project, I would like to add the following:
 1. More robust unit tests
    - Check for http statuses, error handling with misformed JSON, etc.
