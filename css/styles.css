@@ -1,0 +1,173 @@
+body {
+  font-family: 'Roboto', 'Sans Serif';
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #505050;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  text-align:center;
+}
+
+h1, {
+  font-weight: 300;
+}
+
+header > h1 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1128px) {
+  #content {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+    /* grid-template-columns: 363px 363px 363px; */
+    grid-template-rows: repeat(2, 363px);
+    text-align:center;  }
+}
+
+@media screen and (min-width: 1128px) {
+  #content {
+    display: grid;
+    grid-gap: 5px;
+    /* grid-template-columns: repeat(auto-fit, minmax(363px, 1fr)); */
+    grid-template-columns: 363px 363px 363px;
+    grid-template-rows: repeat(2, 363px);
+    text-align:center;  }
+}
+
+.detailItem {
+/*TODO: Add 3 columns in desktop, 1 in mobile*/
+}
+
+.thumbnail {
+  margin:10px;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 15px;
+  padding:5px;
+  background-color:rgba(89, 89, 89, 0.3);
+  color: #1a1a1a;
+}
+
+.price {
+  margin-top: 280px;
+  margin-left: 10px;
+  margin-right: 310px;
+  padding:5px;
+  background-color:rgba(13, 13, 13, 0.8);
+  color: #f2f2f2;
+}
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  display: block;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slideContainer {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -7em;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.active {
+  display: block !important;
+}
+
+.slideContainer {
+  text-align:center;
+}
+
+.modalContent {
+  text-align:center;
+}

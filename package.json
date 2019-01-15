@@ -1,0 +1,34 @@
+{
+  "name": "wscodechallenge",
+  "version": "1.0.0",
+  "description": "cold nights hot tea",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "webpack": "webpack",
+    "test": "mocha -r jsdom-global/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etjones319/WSCodeChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "http-server": "^0.11.1",
+    "jsdom": "13.1.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-jsdom": "~2.0.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {}
+}
