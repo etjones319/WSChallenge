@@ -1,5 +1,5 @@
 # Williams Sonoma Coding Challenge
-## Author: Eric Jones
+### Author: Eric Jones
 
 #### Running the server
 The appication uses http-server, and can be initilaized with:
